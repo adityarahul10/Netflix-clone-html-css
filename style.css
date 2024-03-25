@@ -1,0 +1,573 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+.header {
+  width: 100%;
+  height: 73vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(Assets/images/bg.jpg);
+  color: #fff;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 300px;
+  padding: 19px 0;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+nav button {
+  border: 0;
+  outline: 0;
+  color: #fff;
+  padding: 6px 16px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 16px;
+}
+
+hr {
+  height: 8px;
+  background-color: #55535380;
+  border: 0;
+}
+
+.language-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #625f5f;
+  outline: 0;
+  padding: 6px 36px;
+  width: 126px;
+  height: 32px;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.language-btn img {
+  width: 8px;
+  margin-left: 10px;
+}
+
+.language-btn i {
+  margin-right: 7px;
+}
+
+.signin-btn {
+  font-size: 1rem;
+  padding: 6px 16px;
+  border-top: 1px solid #db0001;
+  background-color: #db0001;
+  cursor: pointer;
+}
+
+.header-content {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translate(-17%, -50%);
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.header-content h1 {
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 100px;
+}
+
+.header-content h3 {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.header-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.foot-content p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.email-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding-left: 7px;
+}
+.email-label {
+  position: absolute;
+  top: 35%;
+  left: 3%;
+  color: #b1a7a7;
+  transition: 0.5s;
+}
+
+.email-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-cont {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 370px;
+  height: 58px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #8d8888;
+}
+
+.form-cont input {
+  color: #fff;
+}
+
+.email-input:focus + .email-label {
+  top: 0.2rem;
+  font-size: 10px;
+}
+
+.email-input:not(:placeholder-shown).email-input:not(:focus) + .email-label {
+  top: 0.2rem;
+  font-size: 10px;
+}
+
+.email-input:focus-visible {
+  outline: none;
+}
+
+.email-signup button {
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.feature {
+  border-top: 8px solid #222;
+  padding: 2rem 1rem;
+  color: #fff;
+}
+
+.features__container .feature-border {
+  border-top: 8px solid #333;
+}
+
+.feature__details {
+  text-align: center;
+}
+
+.feature__title {
+  font-size: 25px;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.feature__sub__title {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.feature__image__container {
+  width: 100%;
+  position: relative;
+}
+.feature__image {
+  width: 100%;
+}
+
+.feature__backgroud__video__container {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 13%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  z-index: -2;
+}
+
+.feature__backgroud__video {
+  width: 100%;
+}
+
+.feature__2__poster__container {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 16em;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  height: 60px;
+  padding: 0.25rem 0.6rem;
+  gap: 15px;
+}
+
+.poster__container {
+  width: 20%;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+}
+.poster__details {
+  width: 60%;
+}
+.poster__details > h4 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.poster__details > h6 {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(63, 63, 246);
+}
+
+.download__gif__container {
+  width: 20%;
+  height: 100%;
+}
+.gif {
+  width: 100%;
+  height: 100%;
+}
+
+.feature__3__backgroud__video__container {
+  max-width: 63%;
+  max-height: 47%;
+  z-index: -2;
+  top: 9%;
+  left: 19%;
+}
+
+.FAQ__accordian {
+  width: 100%;
+}
+.FAQ__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 24px;
+  font-size: 18px;
+  background-color: #303030;
+  border: 1px solid #303030;
+  color: white;
+}
+
+.FAQ__visible {
+  background-color: #303030;
+  border-top: 1px solid black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.FAQ__visible > p {
+  margin: 1rem;
+}
+.FAQ__list__container {
+  border-top: 8px solid #222;
+  padding-bottom: 2rem;
+  padding-top: 50px;
+}
+.FAQ__heading {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 3rem;
+}
+
+.FAQ__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.FAQ__get__started__email {
+  text-align: center;
+}
+
+.FAQ__get__started__email > h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+footer {
+  border-top: 8px solid #222;
+  padding: 20rem 1rem;
+  color: #757575;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__row__2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.footer__row__1 h4 {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+
+.footer__row__1 a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .hero__bg__image__container {
+    height: 100vh;
+  }
+
+  .hero__bg__overlay {
+    height: 100vh;
+  }
+  .hero__card {
+    top: 40%;
+    left: 30%;
+    transform: translate(-20%, -20%);
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+  .hero__subtitle,
+  .hero__description {
+    font-size: 1.3rem;
+  }
+
+  .feature {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+
+  .feature__title {
+    font-size: 35px;
+  }
+
+  .feature__sub__title {
+    font-size: 20px;
+  }
+  .feature__2__poster__container {
+    max-width: 26em;
+    height: 85px;
+  }
+  .poster__container {
+    width: 15%;
+  }
+  .download__gif__container {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .poster__details > h4 {
+    font-size: 18px;
+  }
+  .poster__details > h6 {
+    font-size: 14px;
+  }
+  .FAQ__title {
+    font-size: 24px;
+  }
+  .FAQ__heading {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  .FAQ__list {
+    padding: 1rem 5rem;
+  }
+  .FAQ__get__started__email {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(15%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 2% 5%;
+  }
+
+  .navbar__brand {
+    width: 150px;
+  }
+
+  .signin__button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .navbar__nav__items {
+    gap: 30px;
+  }
+
+  .hero__card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .form__container {
+    width: 50%;
+  }
+  .email__form__container {
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
+  }
+  .primary__button {
+    height: 50px;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .feature__details {
+    text-align: left;
+    padding: 0 6rem;
+  }
+
+  .feature__title {
+    font-size: 48px;
+  }
+
+  .feature__sub__title {
+    font-size: 1.5rem;
+  }
+
+  .feature__image__container {
+    max-width: 500px;
+  }
+
+  .feature:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .feature__2__poster__container {
+    max-width: 20em;
+    height: 100px;
+    padding: 1rem;
+  }
+  .poster__container {
+    width: 20%;
+  }
+  .FAQ__list {
+    padding: 1rem 22rem;
+  }
+  .FAQ__get__started__email {
+    transform: translateX(16%);
+  }
+  footer {
+    padding: 4rem 20rem;
+    display: flex;
+  }
+
+  .footer__row__2 {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .footer__row__1,
+  .footer__row__3,
+  .footer__row__4 {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 1254px) {
+}
+
+.foot-content .email-signup {
+  margin-bottom: 40px;
+}
+
+.footer__row__3 .dropdown__container button {
+  outline: 0;
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 80px;
+  margin-top: 8px;
+}
+
+.footer__row__1 {
+  margin-left: 80px;
+  color: #ffffffb3;
+}
+
+.footer__row__2 {
+  margin-left: 80px;
+  margin-right: 200px;
+  color: #ffffffb3;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.footer__row__2 p {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.footer__row__3 .dropdown__container {
+  margin-bottom: 25px;
+}
+
+.footer__row__4 {
+  margin-left: 80px;
+  color: #ffffffb3;
+  font-size: 14px;
+}
